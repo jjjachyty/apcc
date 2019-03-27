@@ -1,0 +1,5 @@
+[node]
+dns=[
+    "/ip4/127.0.0.1/tcp/3333/ipfs/QmUkBR9H4wtWf2qSFsXcxSvv86b9SCvJ7nGqKa5ZURCGYE",
+    ]
+port=3334

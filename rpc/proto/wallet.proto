@@ -1,0 +1,21 @@
+syntax = "proto3";
+package msg;
+
+message Request {
+   string Passwd = 1;
+   string  Address = 2;
+}
+
+message AddressBlance {
+    string Address = 1;
+    int64  UserableAmount =2;
+    int64  FrzoneAmount = 3;
+}
+message BlanceResponse {
+  string Reply = 1;
+  repeated AddressBlance Blances = 2;
+}
+
+service Wallet {
+  rpc GetBlance(Request) returns (BlanceResponse){}
+}
